@@ -1,12 +1,3 @@
-terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 5.0"
-    }
-  }
-}
-
 provider "aws" {
   region = "eu-central-1"
 }
@@ -19,9 +10,6 @@ terraform {
   }
 }
 
-provider "aws" {
-  region = "eu-central-1"
-}
 
 # Security Group für EC2
 resource "aws_security_group" "ec2_sg" {
